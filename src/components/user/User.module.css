@@ -1,0 +1,18 @@
+.profile {
+  background-color: #e0dfe3;
+  padding: 20px 0;
+}
+.description {
+  padding: 20px;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+}
+.avatar {
+  width: 100%;
+}
+.name {
+  color: #212121;
+}
