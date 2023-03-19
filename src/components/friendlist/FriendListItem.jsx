@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { Fragment } from 'react';
 import css from './FriendList.module.css';
 export const FriendListItem = ({ avatar, name, isOnline }) => (
-  <li className={css.item}>
+  <Fragment>
     {isOnline ? (
       <span className={css.online}></span>
     ) : (
@@ -9,9 +10,11 @@ export const FriendListItem = ({ avatar, name, isOnline }) => (
     )}
     <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
     <p className={css.name}>{name}</p>
-  </li>
+  </Fragment>
 );
 
 FriendListItem.propTypes = {
-  friends: PropTypes.array,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
